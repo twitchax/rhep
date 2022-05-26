@@ -1,0 +1,21 @@
+[package]
+name = "rhep"
+version = "0.1.0"
+edition = "2021"
+authors = ["Aaron Roney <twitchax@gmail.com>"]
+license = "MIT"
+description = "A tool to easily find / replace text for config preparation purposes."
+readme = "README.md"
+homepage = "https://github.com/twitchax/rhep"
+repository = "https://github.com/twitchax/rhep"
+keywords = ["cli", "find", "replace", "config"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+clap = { version = "3.1.18", features = ["derive"] }
+glob = "0.3.0"
+anyhow = "1.0"
+rayon = "1.5"
+simple_logger = "2.1"
+log = "0.4"
+aho-corasick = "0.7"
